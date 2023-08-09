@@ -11,3 +11,12 @@
       var(--ifm-menu-link-padding-horizontal);
   }
 }
+
+
+.sidebarIcon {
+	margin-right: 8px;
+	vertical-align: middle;
+	width: 24px;
+	height: 24px; 
+    }
+    

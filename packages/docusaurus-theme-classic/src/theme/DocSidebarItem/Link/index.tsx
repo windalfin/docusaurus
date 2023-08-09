@@ -51,6 +51,7 @@ export default function DocSidebarItemLink({
           onClick: onItemClick ? () => onItemClick(item) : undefined,
         })}
         {...props}>
+        {item.icon && <img src={item.icon} className={styles.sidebarIcon} alt={`${item.label} icon`} />}
         {label}
         {!isInternalLink && <IconExternalLink />}
       </Link>

@@ -8,3 +8,11 @@
 .menuExternalLink {
   align-items: center;
 }
+
+.sidebarIcon {
+	margin-right: 8px;
+	vertical-align: middle;
+	width: 24px;
+	height: 24px; 
+  }
+     

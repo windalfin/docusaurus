@@ -25,6 +25,7 @@ import {translate} from '@docusaurus/Translate';
 import useIsBrowser from '@docusaurus/useIsBrowser';
 import DocSidebarItems from '@theme/DocSidebarItems';
 import type {Props} from '@theme/DocSidebarItem/Category';
+import styles from './styles.module.css';
 
 // If we navigate to a category and it becomes active, it should automatically
 // expand itself
@@ -184,6 +185,7 @@ export default function DocSidebarItemCategory({
           aria-expanded={collapsible ? !collapsed : undefined}
           href={collapsible ? hrefWithSSRFallback ?? '#' : hrefWithSSRFallback}
           {...props}>
+          {item.icon && <img src={item.icon} className={styles.sidebarIcon} alt={label} />} 
           {label}
         </Link>
         {href && collapsible && (
