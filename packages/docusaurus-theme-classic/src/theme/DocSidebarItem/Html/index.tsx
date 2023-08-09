@@ -18,6 +18,7 @@ export default function DocSidebarItemHtml({
   index,
 }: Props): JSX.Element {
   const {value, defaultStyle, className} = item;
+
   return (
     <li
       className={clsx(
@@ -27,9 +28,12 @@ export default function DocSidebarItemHtml({
         className,
       )}
       key={index}
+    >
       {item.icon && <img src={item.icon} className={styles.sidebarIcon} alt="Icon" />}
-      // eslint-disable-next-line react/no-danger
-      dangerouslySetInnerHTML={{__html: value}}
-    />
+      <div
+        // eslint-disable-next-line react/no-danger
+        dangerouslySetInnerHTML={{__html: value}}
+      />
+    </li>
   );
 }
