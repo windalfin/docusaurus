@@ -29,7 +29,6 @@ export default function DocSidebarItemHtml({
       )}
       key={index}
     >
-      {item.icon && <img src={item.icon} className={styles.sidebarIcon} alt="Icon" />}
       <div
         // eslint-disable-next-line react/no-danger
         dangerouslySetInnerHTML={{__html: value}}
